@@ -56,6 +56,7 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
     article{
         margin-top: 123px;
         margin-left: 19px;
+        margin-bottom: 92px;
     }
 
     .containerFood, .containerDrink, .containerDessert{
@@ -79,6 +80,7 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         margin-bottom: 27px;
         margin-right: 16px;
         border: solid rgba(255, 255, 255, 0.966) 4px;
+        cursor: pointer;
     }
 
     .painel > div{
@@ -88,19 +90,20 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
     .img{
         width: 144px;
         height: 87px;
-        object-fit: cover;
         margin-top: 18px;
         margin-bottom: 8px;
         border-radius: 4px;
         margin-left: 10px;
+        object-fit: cover;
     }
 
     .name{
         font-weight: 700;
         font-size: 16px;
         margin-bottom: 4px;
-        width: 139px;
+        width: 150px;
         height: 23px;
+        
     }
 
     .infos{
@@ -145,6 +148,7 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         font-weight: 400;
         font-size: 20px;
         display: grid;
+        cursor: pointer;
     }
 
     footer > div > p{
