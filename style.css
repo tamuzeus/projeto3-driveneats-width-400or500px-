@@ -78,7 +78,7 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         border-radius: 9px;
         margin-bottom: 27px;
         margin-right: 16px;
-
+        border: solid rgba(255, 255, 255, 0.966) 4px;
     }
 
     .painel > div{
@@ -92,7 +92,7 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         margin-top: 18px;
         margin-bottom: 8px;
         border-radius: 4px;
-        margin-left: 13px;
+        margin-left: 10px;
     }
 
     .name{
@@ -158,10 +158,12 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
 
     /*Javacript*/
 
-    .selectorFood{
-        border-radius: 9px;
-        border: solid 5px #32B72F;
-        border-collapse: collapse;
+    .selectorFood, .selectorDrink, .selectorDessert{
+        border-color: #32B72F;
+    }
+
+    .greenButton{
+        background-color: #32B72F;
     }
 
     
