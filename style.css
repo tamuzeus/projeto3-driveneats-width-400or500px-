@@ -70,10 +70,10 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         font-size: 26px;
         margin-bottom: 17px;
     }
-    
+
     .painel{
         background-color: #ffffff;
-        height: 216px;
+        height: 209px;
         width: 172px;
         box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
         border-radius: 9px;
@@ -81,6 +81,7 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         margin-right: 16px;
         border: solid rgba(255, 255, 255, 0.966) 4px;
         cursor: pointer;
+
     }
 
     .painel > div{
@@ -110,9 +111,13 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         font-weight: 300;
         font-size: 15px;
         color: #A6A6A6;
-        margin-bottom: 5px;
         width: 147px;
         height: 39px;
+    }
+
+    .footerPainel{
+        display: flex;
+        
     }
 
     .price{
@@ -122,6 +127,13 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         margin-bottom: 13px;
         width: 66px;
         height: 19px;
+    }
+
+    .checked-button{
+        width: 15.44px;
+        height: 15.44px;
+        margin-left: 63.78px;
+        display: none;
     }
 
     /*footer*/
@@ -168,6 +180,10 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
 
     .greenButton{
         background-color: #32B72F;
+    }
+
+    .active{
+        display: inherit;
     }
 
     
