@@ -81,16 +81,63 @@ function activeGreen (){
         textButton.innerHTML = "Fazer pedido"
     }
 }
+// link do zap 
+
+// https://wa.me/5599999045111
+//https://wa.me/5599999045111?text=urldamensagempronta
+
+function linkdoZap (){
+
+    let confirmationFood = document.querySelector('.containerFood .selector');
+    let confirmationDrink = document.querySelector('.containerDrink .selector');
+    let confirmationDessert = document.querySelector('.containerDessert .selector');
+
+    if(confirmationFood && confirmationDrink && confirmationDessert){
+        
+        const nameFoodDiv = confirmationFood.querySelector('.name')
+        const nameDrinkDiv = confirmationDrink.querySelector('.name')
+        const nameDessertDiv = confirmationDessert.querySelector('.name')
+
+        const valueFoodDiv = confirmationFood.querySelector('.priceNumber')
+        const valueDrinkDiv = confirmationDrink.querySelector('.priceNumber')
+        const valueDessertDiv = confirmationDessert.querySelector('.priceNumber')
+
+        const nameFood = nameFoodDiv.innerText
+        const nameDrink = nameDrinkDiv.innerText
+        const nameDessert = nameDessertDiv.innerText
+
+        const valueFoodString = valueFoodDiv.innerText
+        const valueDrinkString = valueDrinkDiv.innerText
+        const valueDessertString =  valueDessertDiv.innerText
+
+        const valueFood = parseFloat(valueFoodString)
+        const valueDrink = parseFloat(valueDrinkString)
+        const valueDessert = parseFloat(valueDessertString)
+
+        const valueTotal = valueFood + valueDrink + valueDessert
+        
+
+        let textodecompra = `
+        Olá, gostaria de fazer o pedido:
+        - Prato: ${nameFood}
+        - Bebida: ${nameDrink}
+        - Sobremesa: ${nameDessert}
+        Total: R$ ${valueTotal.toFixed(2)}
+        `
+        
+        const link = `https://wa.me/5599999045111?${textodecompra}`;
+        const encodedlink = encodeURI(link);
+
+        openLink(encodedlink)
+    }
+
+    
+}
 
 
 
 
-
-
-
-
-
-
+function openLink (element) {window.open(element, "_blank");}
 
 
 
