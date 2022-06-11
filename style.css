@@ -16,7 +16,7 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*pode ser transparent também*/
       }
     
-    p, a, span{
+    p, a, span, div{
         font-family: 'Roboto', sans-serif;
     }
 
