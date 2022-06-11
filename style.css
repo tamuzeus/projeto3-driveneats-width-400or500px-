@@ -11,6 +11,10 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
 */
 
 @media only screen and (max-width: 400px) {
+
+    html {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*pode ser transparent também*/
+      }
     
     p, a, span{
         font-family: 'Roboto', sans-serif;
@@ -130,7 +134,7 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         height: 19px;
     }
 
-    .checked-button{
+    .checked{
         width: 15.44px;
         height: 15.44px;
         margin-left: 63.78px;

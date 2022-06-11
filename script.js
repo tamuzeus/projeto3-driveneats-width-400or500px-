@@ -1,4 +1,5 @@
 // active border
+
 function activeBorderFood(element){
 
     let selector = document.querySelector('.containerFood .selector')
@@ -30,21 +31,46 @@ function activeBorderDessert(element){
 
 // active buttons
 
+
 function activeCheckedFood(element){
-    let checked = document.querySelector('.containerFood .checked-button')
+    
+    let checked = element.querySelector('.containerFood .checked')
     let active = document.querySelector('.containerFood .active')
-    if(active !== null){
-        checked.classList.remove('active')
+    if (active !== null){
+        active.classList.remove('active')
     }
     checked.classList.add('active')
 }
+
+
+function activeCheckedDrink(element){
+    
+    let checked = element.querySelector('.containerDrink .checked')
+    let active = document.querySelector('.containerDrink .active')
+    if (active !== null){
+        active.classList.remove('active')
+    }
+    checked.classList.add('active')
+}
+
+
+function activeCheckedDessert(element){
+    
+    let checked = element.querySelector('.containerDessert .checked')
+    let active = document.querySelector('.containerDessert .active')
+    if (active !== null){
+        active.classList.remove('active')
+    }
+    checked.classList.add('active')
+}
+
+
 
 // active green button
 
 function activeGreen (){
     let buttonConfirmation = document.querySelector('.buttonConfirmation')
     let textButton = document.querySelector('.textButton')
-
 
     let confirmationFood = document.querySelector('.containerFood .selector');
     let confirmationDrink = document.querySelector('.containerDrink .selector');
