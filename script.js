@@ -81,12 +81,89 @@ function activeGreen (){
         textButton.innerHTML = "Fazer pedido"
     }
 }
+
+// filterBlur and Confirmation button
+
+function filterBlur(){
+    let confirmationFood = document.querySelector('.containerFood .selector');
+    let confirmationDrink = document.querySelector('.containerDrink .selector');
+    let confirmationDessert = document.querySelector('.containerDessert .selector');
+
+    if(confirmationFood && confirmationDrink && confirmationDessert){
+        const header = document.querySelector('header')
+        const article = document.querySelector('article')
+        const footer = document.querySelector('footer')
+
+        header.classList.add('backfilter')
+        article.classList.add('backfilter')
+        footer.classList.add('backfilter')
+    }
+}
+
+function greenArea(){
+    let greenSquare = document.querySelector('.greenSquare')
+    greenSquare.classList.add('active')
+
+    let confirmationFood = document.querySelector('.containerFood .selector');
+    let confirmationDrink = document.querySelector('.containerDrink .selector');
+    let confirmationDessert = document.querySelector('.containerDessert .selector');
+
+    let nameSquareFood = document.querySelector('.squareFood .nameSquare')
+    let priceSquareFood = document.querySelector('.squareFood .priceSquare')
+
+    let nameSquareDrink = document.querySelector('.squareDrink .nameSquare')
+    let priceSquareDrink = document.querySelector('.squareDrink .priceSquare')
+
+    let nameSquareDessert = document.querySelector('.squareDessert .nameSquare')
+    let priceSquareDessert = document.querySelector('.squareDessert .priceSquare')
+
+    const totalPrice = document.querySelector('.totalPrice')
+
+    if(confirmationFood && confirmationDrink && confirmationDessert){
+        const nameFoodDiv = confirmationFood.querySelector('.name')
+        const nameDrinkDiv = confirmationDrink.querySelector('.name')
+        const nameDessertDiv = confirmationDessert.querySelector('.name')
+
+        const valueFoodDiv = confirmationFood.querySelector('.priceNumber')
+        const valueDrinkDiv = confirmationDrink.querySelector('.priceNumber')
+        const valueDessertDiv = confirmationDessert.querySelector('.priceNumber')
+
+        const nameFood = nameFoodDiv.innerText
+        const nameDrink = nameDrinkDiv.innerText
+        const nameDessert = nameDessertDiv.innerText
+
+        const valueFoodString = valueFoodDiv.innerText
+        const valueDrinkString = valueDrinkDiv.innerText
+        const valueDessertString =  valueDessertDiv.innerText
+
+        const valueFoodfixed = parseFloat(valueFoodString).toFixed(2)
+        const valueDrinkfixed = parseFloat(valueDrinkString).toFixed(2)
+        const valueDessertfixed = parseFloat(valueDessertString).toFixed(2)
+
+        const valueFood = parseFloat(valueFoodString)
+        const valueDrink = parseFloat(valueDrinkString)
+        const valueDessert = parseFloat(valueDessertString)
+
+        let soma = valueFood + valueDrink + valueDessert
+
+        nameSquareFood.innerHTML = nameFood;
+        priceSquareFood.innerHTML = valueFoodfixed;
+
+        nameSquareDrink.innerHTML = nameDrink;
+        priceSquareDrink.innerHTML = valueDrinkfixed;
+
+        nameSquareDessert.innerHTML = nameDessert;
+        priceSquareDessert.innerHTML = valueDessertfixed;
+
+        totalPrice.innerHTML = soma.toFixed(2);
+    }
+}
+
 // link do zap 
 
-// https://wa.me/5599999045111
 //https://wa.me/5599999045111?text=urldamensagempronta
 
-function linkdoZap (){
+function linkdoZap(){
 
     let confirmationFood = document.querySelector('.containerFood .selector');
     let confirmationDrink = document.querySelector('.containerDrink .selector');
@@ -116,6 +193,9 @@ function linkdoZap (){
 
         const valueTotal = valueFood + valueDrink + valueDessert
         
+        const nome = prompt('Digite seu nome: ')
+        const endereço = prompt('Digite seu endereço: ')
+
 
         let textodecompra = `
         Olá, gostaria de fazer o pedido:
@@ -123,6 +203,9 @@ function linkdoZap (){
         - Bebida: ${nameDrink}
         - Sobremesa: ${nameDessert}
         Total: R$ ${valueTotal.toFixed(2)}
+
+        Nome: ${nome}
+        Endereço: ${endereço}
         `
         
         const link = textodecompra;

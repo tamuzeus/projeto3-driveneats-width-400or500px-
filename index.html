@@ -146,12 +146,35 @@
     </article>
 
     <footer>
-        <div class="buttonConfirmation" onclick="linkdoZap()">
+        <div class="buttonConfirmation" onclick="filterBlur(), greenArea()">
             <p class="textButton">Selecione os 3 itens para fechar o pedido</p>
         </div>
     </footer>
 
-a
+    <div class="greenSquare">
+        <div class="nameGreenSquare"><p>Confirme Seu Pedido</p></div>
+        <div class="squareFood">
+            <div class="nameSquare"><p>???</p></div>
+            <div class="priceSquare"><p>???</p></div>
+        </div>
+        <div class="squareDrink">
+            <div class="nameSquare"><p>???</p></div>
+            <div class="priceSquare"><p>???</p></div>
+        </div>
+        <div class="squareDessert">
+            <div class="nameSquare"><p>???</p></div>
+            <div class="priceSquare"><p>???</p></div>
+        </div>
+        <div class="totalSquareArea">
+            <div class="totalSquare"><p>TOTAL</p></div>
+            <div class="priceSquare"><p>R$ <span class="totalPrice">???</span></p></div>
+        </div>
+        <div class="lastConfirmation" onclick="linkdoZap()">
+            <p>Tudo certo, pode pedir!</p>
+        </div>
+        <div class="cancel"><p>Cancelar</p></div>
+    </div>
+
 
     <script src="/script.js"></script>
 </body>

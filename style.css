@@ -141,8 +141,6 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         visibility: hidden;
         opacity: 0;
         transition: visibility 0s, opacity 0.5s linear;
-
-
     }
 
     /*footer*/
@@ -179,6 +177,100 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         text-align: center;
     }
 
+
+    /*Bônus*/
+
+    .greenSquare{
+        background-color: #50D074;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 9px;
+        width: 377px;
+        height: 353px;
+        position:absolute;
+        left: 12px;
+        right: 12px;
+        top: 110px;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+    }
+
+    .nameGreenSquare{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-top: 21px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 28px;
+    }
+
+    .squareFood, .squareDrink, .squareDessert{
+       display: flex;
+       justify-content: space-between;
+       font-style: normal;
+       font-size: 22px;
+       line-height: 26px;
+       color: #FFFFFF;
+       margin-bottom: 13px;
+       margin-left: 15px;
+       margin-right: 15px;
+    }
+
+    .totalSquareArea{
+       display: flex;
+       justify-content: space-between;
+       font-style: normal;
+       font-weight: 700;
+       font-size: 22px;
+       line-height: 26px;
+       letter-spacing: 0.018em;
+       color: #FFFFFF;
+       margin-bottom: 13px;
+       margin-left: 15px;
+       margin-right: 15px;
+       margin-bottom: 24px;
+    }
+
+    .lastConfirmation{
+        background: #FFFFFF;
+        border-radius: 100px;
+        width: 329px;
+        height: 52px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+    }
+
+    .lastConfirmation > p{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.018em;
+        color: #50D074;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .cancel{
+        font-weight: 700;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        Width:333px;
+        Height:52px;
+        color: #FFFFFF;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+    }
+
     /*Javacript*/
 
     .selector{
@@ -189,11 +281,15 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
     .active{
         visibility: visible;
         opacity: 1;
-        
     }
 
     .greenButton{
         background-color: #32B72F;
         transition: 2s;
+    }
+
+    .backfilter{
+        filter: blur(4px);
+        position: fixed;
     }
 }
