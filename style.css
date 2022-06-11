@@ -10,7 +10,7 @@ font-family: 'Righteous', cursive; --- Tittle, Categorys Font: Righteous
 font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
 */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 
     html {
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*pode ser transparent também*/
@@ -151,7 +151,7 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         align-items: center;
         background-color: #ffffff;
         height: 92px;
-        width: 414px;
+        width: 100vw;
 
         position: fixed;
         bottom: 0;
@@ -161,7 +161,7 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
     footer > div{
         background: #CBCBCB;
         border-radius: 50px;
-        width: 364px;
+        width: 70vw;
         height: 53px;
         color: #FFFFFF;
         font-weight: 400;
