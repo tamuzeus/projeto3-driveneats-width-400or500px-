@@ -289,7 +289,10 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
     }
 
     .backfilter{
-        filter: blur(4px);
+        background: rgba(255, 255, 255, 0.9);
+        opacity: 0.1;
         position: fixed;
     }
+
+    
 }
