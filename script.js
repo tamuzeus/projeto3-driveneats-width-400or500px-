@@ -125,19 +125,18 @@ function linkdoZap (){
         Total: R$ ${valueTotal.toFixed(2)}
         `
         
-        const link = `https://wa.me/5599999045111?${textodecompra}`;
-        const encodedlink = encodeURI(link);
+        const link = `${textodecompra}`;
+        const encodedLink = encodeURIComponent(link);
+        const linkAll = 'https://wa.me/5599999045111?' + `${encodedLink}`
 
-        openLink(encodedlink)
+        openLink(linkAll)
     }
 
     
 }
 
 
-
-
-function openLink (element) {window.open(element, "_blank");}
+function openLink (element) {window.open(element);}
 
 
 
