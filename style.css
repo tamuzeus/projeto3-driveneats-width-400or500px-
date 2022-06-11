@@ -22,7 +22,7 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
 
     /*Header*/
 
-    header{
+    .headerContainer{
         height: 92px;
         width: 100%;
         background-color: #CF2B2B;
@@ -33,19 +33,19 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         left: 0;
     }
 
-    header > p{
+    .headerContainer > p{
         margin-left: 21px;
         margin-top: 8px;
     }
     
-    header > p:nth-child(1){
+    .headerContainer > p:nth-child(1){
         font-family: 'Righteous', cursive;
         font-weight: 400;
         font-size: 44px;
         margin-bottom: 5px;
     }
 
-    header > p:nth-child(2){
+    .headerContainer > p:nth-child(2){
         font-size: 18px;
         margin-top: 0px;
         margin-bottom: 18px;
@@ -289,7 +289,10 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
     }
 
     .backfilter{
-        filter: blur(4px);
+        background: rgba(255, 255, 255, 0.9);
+        opacity: 0.2;
+        width: 100%;
+        height: 100%;
         position: fixed;
     }
 }
