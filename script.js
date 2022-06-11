@@ -125,11 +125,11 @@ function linkdoZap (){
         Total: R$ ${valueTotal.toFixed(2)}
         `
         
-        const link = `${textodecompra}`;
-        const encodedLink = encodeURIComponent(link);
-        const linkAll = 'https://wa.me/5599999045111?' + `${encodedLink}`
+        const link = textodecompra;
+        const encodedlink = encodeURIComponent(link, "_blank");
+        const allLink = "https://wa.me/5599999045111?text=" + `${encodedlink}`
 
-        openLink(linkAll)
+        openLink(allLink)
     }
 
     
