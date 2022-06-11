@@ -102,7 +102,6 @@ function filterBlur(){
 
 function greenArea(){
     let greenSquare = document.querySelector('.greenSquare')
-    greenSquare.classList.add('active')
 
     let confirmationFood = document.querySelector('.containerFood .selector');
     let confirmationDrink = document.querySelector('.containerDrink .selector');
@@ -120,6 +119,7 @@ function greenArea(){
     const totalPrice = document.querySelector('.totalPrice')
 
     if(confirmationFood && confirmationDrink && confirmationDessert){
+        greenSquare.classList.add('active')
         const nameFoodDiv = confirmationFood.querySelector('.name')
         const nameDrinkDiv = confirmationDrink.querySelector('.name')
         const nameDessertDiv = confirmationDessert.querySelector('.name')
