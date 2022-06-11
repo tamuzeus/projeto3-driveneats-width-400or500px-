@@ -138,7 +138,11 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         width: 15.44px;
         height: 15.44px;
         margin-left: 63.78px;
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s linear;
+
+
     }
 
     /*footer*/
@@ -179,13 +183,17 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
 
     .selector{
         border-color: #32B72F;
+        transition: 1s;
     }
 
     .active{
-        display: inherit;
+        visibility: visible;
+        opacity: 1;
+        
     }
 
     .greenButton{
         background-color: #32B72F;
+        transition: 2s;
     }
 }

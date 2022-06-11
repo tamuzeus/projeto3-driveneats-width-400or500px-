@@ -80,8 +80,6 @@ function activeGreen (){
         buttonConfirmation.classList.add('greenButton')
         textButton.innerHTML = "Fazer pedido"
     }
-
-
 }
 
 
