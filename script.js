@@ -11,11 +11,28 @@ function activeBorderFood(element){
     element.classList.add('selector')
 }
 
+function activeBorderDrink(element){
+
+    let selector = document.querySelector('.containerDrink .selector')
+    if(selector !== null){
+        selector.classList.remove('selector')
+    }
+    element.classList.add('selector')
+}
+
+function activeBorderDessert(element){
+
+    let selector = document.querySelector('.containerDessert .selector')
+    if(selector !== null){
+        selector.classList.remove('selector')
+    }
+    element.classList.add('selector')
+}
+
 // active buttons
 
 function activeCheckedFood(element){
     let checked = document.querySelector('.containerFood .checked-button')
-
     let active = document.querySelector('.containerFood .active')
 
     if(active !== null){
