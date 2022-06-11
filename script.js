@@ -159,6 +159,20 @@ function greenArea(){
     }
 }
 
+
+function cancelConfirmation(){
+    let greenSquare = document.querySelector('.greenSquare')
+    greenSquare.classList.remove('active')
+
+    const header = document.querySelector('header')
+    const article = document.querySelector('article')
+    const footer = document.querySelector('footer')
+
+    header.classList.remove('backfilter')
+    article.classList.remove('backfilter')
+    footer.classList.remove('backfilter')
+}
+
 // link do zap 
 
 //https://wa.me/5599999045111?text=urldamensagempronta
