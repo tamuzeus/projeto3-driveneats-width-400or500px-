@@ -16,13 +16,13 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*pode ser transparent também*/
       }
     
-    p, a, span{
+    p, a, span, div{
         font-family: 'Roboto', sans-serif;
     }
 
     /*Header*/
 
-    .containerHeader{
+    header{
         height: 92px;
         width: 100%;
         background-color: #CF2B2B;
@@ -33,19 +33,19 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         left: 0;
     }
 
-    .containerHeader > p{
+    header > p{
         margin-left: 21px;
         margin-top: 8px;
     }
     
-    .containerHeader > p:nth-child(1){
+    header > p:nth-child(1){
         font-family: 'Righteous', cursive;
         font-weight: 400;
         font-size: 44px;
         margin-bottom: 5px;
     }
 
-    .containerHeader > p:nth-child(2){
+    header > p:nth-child(2){
         font-size: 18px;
         margin-top: 0px;
         margin-bottom: 18px;
@@ -145,7 +145,7 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
 
     /*footer*/
 
-    .footerContainer{
+    footer{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -158,7 +158,7 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
     
     }
 
-    .buttonConfirmation{
+    footer > div{
         background: #CBCBCB;
         border-radius: 50px;
         width: 364px;
@@ -170,7 +170,7 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         cursor: pointer;
     }
 
-    .textButton{
+    footer > div > p{
         width: 185px;
         justify-self: center;
         align-self: center;
@@ -180,21 +180,32 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
 
     /*Bônus*/
 
-    .greenSquare{
+    /* modal */
+    .modal{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        display: none;
+    }
+
+    .modal-container{
         background-color: #50D074;
         box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
         border-radius: 9px;
         width: 377px;
         height: 353px;
-        position:absolute;
-        left: 12px;
-        right: 12px;
-        top: 110px;
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 0s, opacity 0.5s linear;
     }
 
+    .activeScreen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .nameGreenSquare{
         font-weight: 700;
         font-size: 22px;
@@ -283,16 +294,9 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         opacity: 1;
     }
 
+
     .greenButton{
         background-color: #32B72F;
         transition: 2s;
     }
-
-    .backfilter{
-        background: rgba(255, 255, 255, 0.9);
-        opacity: 0.1;
-        position: fixed;
-    }
-
-    
 }

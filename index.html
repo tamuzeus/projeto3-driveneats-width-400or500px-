@@ -18,10 +18,8 @@
     <!--Tamanho do site: width = 400px-->
     
     <header>
-        <div class="containerHeader">
-            <p>DrivenEats</p>
-            <p>Sua comida em 6 minutos</p>
-        </div>
+        <p>DrivenEats</p>
+        <p>Sua comida em 6 minutos</p>
     </header>
 
     <article>
@@ -147,36 +145,43 @@
 
     </article>
 
+
     <footer>
-        <div class="footerContainer">
-                <div class="buttonConfirmation" onclick="filterBlur(), greenArea()">
-                <p class="textButton">Selecione os 3 itens para fechar o pedido</p>
-            </div>
+            <!--modal click-->
+        <div class="buttonConfirmation" onclick="greenArea()">
+            <p class="textButton">Selecione os 3 itens para fechar o pedido</p>
         </div>
+            <!--modal click-->
     </footer>
 
-    <div class="greenSquare">
-        <div class="nameGreenSquare"><p>Confirme Seu Pedido</p></div>
-        <div class="squareFood">
-            <div class="nameSquare"><p>???</p></div>
-            <div class="priceSquare"><p>???</p></div>
+
+     <!--modal-->
+    <div class="modal">
+    <!--modal-->    
+        <div class="modal-container">
+            <div class="nameGreenSquare"><p>Confirme Seu Pedido</p></div>
+            <div class="squareFood">
+                <div class="nameSquare"><p>???</p></div>
+                <div class="priceSquare"><p>???</p></div>
+            </div>
+            <div class="squareDrink">
+                <div class="nameSquare"><p>???</p></div>
+                <div class="priceSquare"><p>???</p></div>
+            </div>
+            <div class="squareDessert">
+                <div class="nameSquare"><p>???</p></div>
+                <div class="priceSquare"><p>???</p></div>
+            </div>
+            <div class="totalSquareArea">
+                <div class="totalSquare"><p>TOTAL</p></div>
+                <div class="priceSquare"><p>R$ <span class="totalPrice">???</span></p></div>
+            </div>
+            <div class="lastConfirmation" onclick="linkdoZap()">
+                <p>Tudo certo, pode pedir!</p>
+            </div>
+            <div class="cancel" onclick="cancelConfirmation()"><p>Cancelar</p></div>
         </div>
-        <div class="squareDrink">
-            <div class="nameSquare"><p>???</p></div>
-            <div class="priceSquare"><p>???</p></div>
-        </div>
-        <div class="squareDessert">
-            <div class="nameSquare"><p>???</p></div>
-            <div class="priceSquare"><p>???</p></div>
-        </div>
-        <div class="totalSquareArea">
-            <div class="totalSquare"><p>TOTAL</p></div>
-            <div class="priceSquare"><p>R$ <span class="totalPrice">???</span></p></div>
-        </div>
-        <div class="lastConfirmation" onclick="linkdoZap()">
-            <p>Tudo certo, pode pedir!</p>
-        </div>
-        <div class="cancel" onclick="cancelConfirmation()"><p>Cancelar</p></div>
+
     </div>
 
 

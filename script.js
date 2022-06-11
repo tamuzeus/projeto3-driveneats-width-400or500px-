@@ -31,7 +31,6 @@ function activeBorderDessert(element){
 
 // active buttons
 
-
 function activeCheckedFood(element){
     
     let checked = element.querySelector('.containerFood .checked')
@@ -53,7 +52,6 @@ function activeCheckedDrink(element){
     checked.classList.add('active')
 }
 
-
 function activeCheckedDessert(element){
     
     let checked = element.querySelector('.containerDessert .checked')
@@ -63,8 +61,6 @@ function activeCheckedDessert(element){
     }
     checked.classList.add('active')
 }
-
-
 
 // active green button
 
@@ -82,26 +78,10 @@ function activeGreen (){
     }
 }
 
-// filterBlur and Confirmation button
-
-function filterBlur(){
-    let confirmationFood = document.querySelector('.containerFood .selector');
-    let confirmationDrink = document.querySelector('.containerDrink .selector');
-    let confirmationDessert = document.querySelector('.containerDessert .selector');
-
-    if(confirmationFood && confirmationDrink && confirmationDessert){
-        const header = document.querySelector('header')
-        const article = document.querySelector('article')
-        const footer = document.querySelector('footer')
-
-        header.classList.add('backfilter')
-        article.classList.add('backfilter')
-        footer.classList.add('backfilter')
-    }
-}
+//Confirmation button
 
 function greenArea(){
-    let greenSquare = document.querySelector('.greenSquare')
+    let modal = document.querySelector('.modal')
 
     let confirmationFood = document.querySelector('.containerFood .selector');
     let confirmationDrink = document.querySelector('.containerDrink .selector');
@@ -119,7 +99,7 @@ function greenArea(){
     const totalPrice = document.querySelector('.totalPrice')
 
     if(confirmationFood && confirmationDrink && confirmationDessert){
-        greenSquare.classList.add('active')
+        modal.classList.add('activeScreen')
         const nameFoodDiv = confirmationFood.querySelector('.name')
         const nameDrinkDiv = confirmationDrink.querySelector('.name')
         const nameDessertDiv = confirmationDessert.querySelector('.name')
@@ -159,10 +139,9 @@ function greenArea(){
     }
 }
 
-
 function cancelConfirmation(){
-    let greenSquare = document.querySelector('.greenSquare')
-    greenSquare.classList.remove('active')
+    let modal = document.querySelector('.modal')
+    modal.classList.remove('activeScreen')
 
     const header = document.querySelector('header')
     const article = document.querySelector('article')
@@ -229,9 +208,7 @@ function linkdoZap(){
         openLink(allLink)
     }
 
-    
 }
-
 
 function openLink (element) {window.open(element);}
 
