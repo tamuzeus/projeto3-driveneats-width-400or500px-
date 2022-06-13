@@ -1,3 +1,7 @@
+let confirmationFood;
+let confirmationDrink;
+let confirmationDessert;
+
 // active border
 
 function activeBorderFood(element){
@@ -68,9 +72,9 @@ function activeGreen (){
     let buttonConfirmation = document.querySelector('.buttonConfirmation')
     let textButton = document.querySelector('.textButton')
 
-    let confirmationFood = document.querySelector('.containerFood .selector');
-    let confirmationDrink = document.querySelector('.containerDrink .selector');
-    let confirmationDessert = document.querySelector('.containerDessert .selector');
+    confirmationFood = document.querySelector('.containerFood .selector');
+    confirmationDrink = document.querySelector('.containerDrink .selector');
+    confirmationDessert = document.querySelector('.containerDessert .selector');
 
     if(confirmationFood && confirmationDrink && confirmationDessert){
         buttonConfirmation.classList.add('greenButton')
@@ -82,10 +86,6 @@ function activeGreen (){
 
 function greenArea(){
     let modal = document.querySelector('.modal')
-
-    let confirmationFood = document.querySelector('.containerFood .selector');
-    let confirmationDrink = document.querySelector('.containerDrink .selector');
-    let confirmationDessert = document.querySelector('.containerDessert .selector');
 
     let nameSquareFood = document.querySelector('.squareFood .nameSquare')
     let priceSquareFood = document.querySelector('.squareFood .priceSquare')
@@ -157,11 +157,6 @@ function cancelConfirmation(){
 //https://wa.me/5599999045111?text=urldamensagempronta
 
 function linkdoZap(){
-
-    let confirmationFood = document.querySelector('.containerFood .selector');
-    let confirmationDrink = document.querySelector('.containerDrink .selector');
-    let confirmationDessert = document.querySelector('.containerDessert .selector');
-
     if(confirmationFood && confirmationDrink && confirmationDessert){
         
         const nameFoodDiv = confirmationFood.querySelector('.name')
@@ -207,7 +202,6 @@ function linkdoZap(){
 
         openLink(allLink)
     }
-
 }
 
 function openLink (element) {window.open(element);}

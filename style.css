@@ -141,6 +141,7 @@ font-family: 'Roboto', sans-serif; --- Remaining of site: Roboto
         visibility: hidden;
         opacity: 0;
         transition: visibility 0s, opacity 0.5s linear;
+        color: #32B72F;
     }
 
     /*footer*/
